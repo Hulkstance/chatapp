@@ -56,6 +56,24 @@ public class ServerTest {
         // Get users
         Vector<ClientInfo> users = handler.getUsers();
 
+        // Find user
+        User foundUser = handler.findByUsername(username);
+
+        // User existence
+        boolean userExists = handler.usernameExists(foundUser.getUsername());
+
+        assertEquals(10, foundUser.getUsername().length());
+        assertEquals(true, userExists);
         assertEquals(1, users.size());
+    }
+
+    /**
+     * Random string generation test.
+     */
+    @Test
+    public void testUtil() {
+        String random = Util.getInstance().getRandomString(15);
+
+        assertEquals(15, random.length());
     }
 }
