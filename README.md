@@ -7,6 +7,3 @@ Simple multithreaded chat application.
 - Change username (/changename new-username)
 - Class `User` implements the Fluent Interface Builder design pattern and class `Util` implements the Singleton Pattern
 
-# TODO:
-- More unit tests
-- S.O.L.I.D. improvements
