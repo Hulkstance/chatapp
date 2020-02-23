@@ -5,5 +5,3 @@ Simple multithreaded chat application.
 - It allows multiple clients to join
 - Private messages (/w username message)
 - Change username (/changename new-username). Username is unique.
-- Class `User` implements the Fluent Interface Builder design pattern and class `Util` implements the Singleton Pattern
-
